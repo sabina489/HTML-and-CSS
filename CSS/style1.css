@@ -1,0 +1,291 @@
+body{
+  font-family: sans-serif;
+
+  /* margin: 0;
+  padding: 0; */
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  width: 80%;
+  margin: auto;
+}
+
+header{
+  background-color: #fff;
+  
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* left sider header */
+.left-header{
+  display: flex;
+}
+
+nav ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #262626;
+}
+
+nav li a:hover{
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+}
+
+/* Right sider header */
+.right-header{
+  display: flex;
+  /* padding-right: 150px; */
+  
+}
+
+.right-header .nav-item{
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item .one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-item .two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-item .two img{
+  width: 16px;
+  height: 16px;
+  
+}
+
+.nav-item .three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-item .three img{
+  width: 16px;
+  height: 16px;
+  
+}
+
+.nav-item a:hover{
+  border-bottom: 2px solid #000;
+}
+
+
+.mobile-header {
+  display: none;
+}
+
+.mobile-navbar-btn{
+  display: none;
+}
+
+.cross {
+  display: none;
+}
+
+.show-cross {
+  display: block;
+}
+
+.hide-hamberger {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  nav{
+    display: none;
+    
+  }
+
+  .mobile-navbar-btn{
+    display: block;
+  }
+
+  .left-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-nav-icon{
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    transition: all 0.5 ease-in-out;
+    
+  }
+
+  .right-header{
+    display: none;
+  }
+
+  .mobile-header{
+    display:none;
+    flex-direction: column;
+    padding-top: 12px;
+    transform: translateX(100%);
+    background-color: #f2f2f2;
+  }
+
+  .active{
+    display: flex;
+    opacity: 1;
+    transform: translateX(0%);
+    animation: header 1000ms ease-in-out;
+
+  }
+
+  @keyframes header{
+    from{transform: translateX(100%);}
+    to{transform: translateX(0%);}
+  }
+
+  @keyframes header{
+    from{background-color: #65abe1;}
+    to{background-color: rgb(212, 59, 59);}
+  }
+
+  .mobile-header a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+  }
+
+  .header{
+    position: relative;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: none;
+  }
+
+}
+
+/* End of mobile view */
+.right-header a{
+  text-decoration: none;
+  color: #262626;
+}
+
+/* Section part */
+.section{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  
+  background-color: #B1D6F9;
+}
+
+.shop_container .shop {
+  overflow: hidden;
+}
+
+.shop_container {
+  width: 80%;
+  margin: auto;
+  
+}
+.left-side p{
+  width: 400px  ;
+}
+
+.section .left-side .person-btn{
+  display: block;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px 16px;
+  color: #fff;
+  background-color: blue;
+  border: none;
+}
+
+.section_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+/* Section-2 Part */
+.section_2_container{
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section_2_container .devices{
+  /* width: 80%; */
+  
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.devices a{
+  color: #006DC0;
+  margin-top: 16px;
+}
+
+/* Section-2 shop part */
+.shop_container{
+  width: 80%;
+  margin: auto;
+  margin-top: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+
+  display: grid;
+  grid-gap: 20px;
+}
+
+.shop button{
+  border: none;
+  color: #006DC0;
+  font-size: 16px;
+}
+
+.shop p{
+  font-size: 14px;
+}
+
+.shop {
+  width: 100%;
+  
+}

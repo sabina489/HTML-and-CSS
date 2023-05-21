@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(129, 129, 188);
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 200px;
+    padding: 10px 10px;
+}
+
+h1::before{
+    content: "";
+    width: 100px;
+    border-bottom: 5px solid rgb(42, 156, 164);
+    top: 5%;
+    /* left: 50%; */
+    position: absolute;
+}
+
+h1::after{
+    content: "";
+    width: 200px;
+    border-bottom: 5px solid rgb(42, 156, 164);
+    bottom:0%;
+    /* left: 50%; */
+    position: absolute;
+}

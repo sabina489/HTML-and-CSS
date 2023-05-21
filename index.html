@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/734bcbf295.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="utils.css"> -->
+    <title>Landing page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-one">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <!-- <li><img src="images/notification.jpg"></li> -->
+                <!-- <li><img src="images/n.jpeg"></li> -->
+                <li><img src="images/video.png"></li>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+
+            </ul>
+        </div>
+        <div class="nav-two">
+
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon active" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+
+            <!-- setting menu -->
+            <div class="setting-menu">
+
+                <div id="dark-btn" class="dark-btn-on">
+                    <span></span>
+                </div>
+
+
+                <div class="part-one">
+                    <div class="profile">
+                        <img src="images/profile-pic.png">
+
+
+                        <div class="details">
+                            <h4>John Thapa</h4>
+                            <h6>See you profile</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part-two">
+                    <div class="profile">
+                        <img src="images/feedback.png">
+
+
+                        <div class="details">
+                            <h4>Give Feedback</h4>
+                            <h6>help us to create new design</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="privacy">
+                    <div class="help-click">
+                        <img src="images/setting.png">
+                        <a href="#">Setting & Privacy</a>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+
+
+                    </div>
+
+
+                    <div class="help-click">
+                        <img src="images/help.png">
+                        <a href="#">Help & Support</a>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+
+                    <div class="help-click">
+                        <img src="images/display.png">
+                        <a href="#">Display</a>
+
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+
+                    <div class="help-click">
+                        <img src="images/logout.png">
+                        <a href="#">Logout</a>
+
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Setting Menu -->
+                <!-- <div class="setting-menu">
+            <div class="profile">
+                <img src="images/profile-pic.png">
+            
+
+            <div class="details">
+                <h4>John Thapa</h4>
+                <p>Public <i class="fas-fa-caret-down"></i></p>
+            </div>
+        </div> -->
+    </nav>
+
+
+    <div class="container">
+
+        <!-- left sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png"> Latest news</a>
+                <a href="#"><img src="images/friends.png"> Friends</a>
+                <a href="#"><img src="images/group.png"> Group</a>
+                <a href="#"><img src="images/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="images/watch.png"> Watch</a>
+                <a href="#">See Again</a>
+            </div>
+
+            <div class="shortcuts-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- main content -->
+
+        <div class="main-content">
+            <div class="story-list">
+
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Rinu</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Asmita</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Neha</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Saraswati</p>
+                </div>
+            </div>
+
+
+
+            <div class="main-profile-info-container">
+                <div class="profile-info">
+                    <div class="profile">
+                        <img src="images/profile.png">
+                    </div>
+
+                    <div class="details">
+                        <h4>John Thapa</h4>
+                        <p>Public <i class="fas-fa-caret-down"></i></p>
+
+
+                        <div class="ask">
+                            <textarea rows="4" placeholder="What's on your mind, John?"></textarea>
+                            <div class="post-link">
+                                <a href="#"><img src="images/live-video.png">Live Video</a>
+                                <a href="#"><img src="images/photo.png" alt="">Photo/Videos</a>
+                                <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity</a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="profile-details">
+
+                    <div class="image-wrapper">
+                        <div class="another-profile">
+                            <div class="profile">
+                                <img src="images/member-2.png">
+                            </div>
+                            <div class="details">
+                                <h4>Kisor Ghising</h4>
+                                <p>April 17 2023, 16:43 <i class="fas-fa-caret-down"></i></p>
+
+                            </div>
+
+                            <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+
+                        </div>
+
+                        <div class="profile-icon">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span class="image-tag">#Lorem
+                                ipsum dolor sit.</span><span class="image-tag">#Lorem, ipsum.</span>ut corporis iste
+                            ullam dolorum beatae?</p>
+                        <img src="images/feed-image-2.png">
+                    </div>
+
+
+                    <div class="react">
+                        <div class="activity">
+                            <div class="main-icon-container">
+                                <div class="icon-container"><i class="fa-solid fa-thumbs-up"></i>120</div>
+                                <div class="icon-container"><i class="fa-sharp fa-solid fa-comment"></i>50</div>
+                                <div class="icon-container"><i class="fa-sharp fa-solid fa-share"></i>10</div>
+                            </div>
+
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Another profile details -->
+                <div class="profile-details">
+
+                    <div class="image-wrapper">
+                        <div class="another-profile">
+                            <div class="profile">
+                                <img src="images/member-5.png">
+                            </div>
+                            <div class="details">
+                                <h4>Sajan Amatya</h4>
+                                <p>April 17 2023, 16:43 <i class="fas-fa-caret-down"></i></p>
+
+                            </div>
+
+                            <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+
+                        </div>
+
+                        <div class="profile-icon">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span class="image-tag">#Lorem
+                                ipsum dolor sit.</span><span class="image-tag">#Lorem, ipsum.</span>ut corporis iste
+                            ullam dolorum beatae?</p>
+                        <img src="images/feed-image-3.png">
+                    </div>
+
+
+                    <div class="react">
+                        <div class="activity">
+
+                            <div class="icon-container"><i class="fa-solid fa-thumbs-up"></i>120</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-comment"></i>50</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-share"></i>10</div>
+
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- third profile details -->
+                <div class="profile-details">
+
+                    <div class="image-wrapper">
+                        <div class="another-profile">
+                            <div class="profile">
+                                <img src="images/profile.png">
+                            </div>
+                            <div class="details">
+                                <h4>Shovan Shrestha</h4>
+                                <p>April 17 2023, 16:43 <i class="fas-fa-caret-down"></i></p>
+
+                            </div>
+
+                            <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+
+                        </div>
+
+                        <div class="profile-icon">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span class="image-tag">#Lorem
+                                ipsum dolor sit.</span><span class="image-tag">#Lorem, ipsum.</span>ut corporis iste
+                            ullam dolorum beatae?</p>
+                        <img src="images/feed-image-4.png">
+                    </div>
+
+
+                    <div class="react">
+                        <div class="activity">
+
+                            <div class="icon-container"><i class="fa-solid fa-thumbs-up"></i>120</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-comment"></i>50</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-share"></i>10</div>
+
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Fourth profile details -->
+                <div class="profile-details">
+
+                    <div class="image-wrapper">
+                        <div class="another-profile">
+                            <div class="profile">
+                                <img src="images/member-3.png">
+                            </div>
+                            <div class="details">
+                                <h4>Shailja Sarawagi</h4>
+                                <p>May 17 2023, 12:43 <i class="fas-fa-caret-down"></i></p>
+
+                            </div>
+
+                            <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+
+                        </div>
+
+                        <div class="profile-icon">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span class="image-tag">#Lorem
+                                ipsum dolor sit.</span><span class="image-tag">#Lorem, ipsum.</span>ut corporis iste
+                            ullam dolorum beatae?</p>
+                        <img src="images/feed-image-5.png">
+                    </div>
+
+
+                    <div class="react">
+                        <div class="activity">
+
+                            <div class="icon-container"><i class="fa-solid fa-thumbs-up"></i>120</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-comment"></i>50</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-share"></i>10</div>
+
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- fifth profile details -->
+                <div class="profile-details">
+
+                    <div class="image-wrapper">
+                        <div class="another-profile">
+                            <div class="profile">
+                                <img src="images/profile.png">
+                            </div>
+                            <div class="details">
+                                <h4>Sushil Khadka</h4>
+                                <p>April 17 2023, 16:43 <i class="fas-fa-caret-down"></i></p>
+
+                            </div>
+
+                            <a href="#"><i class="fas-fa-ellipsis-v"></i></a>
+
+                        </div>
+
+                        <div class="profile-icon">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span class="image-tag">#Lorem
+                                ipsum dolor sit.</span><span class="image-tag">#Lorem, ipsum.</span>ut corporis iste
+                            ullam dolorum beatae?</p>
+                        <img src="images/feed-image-3.png">
+                    </div>
+
+
+                    <div class="react">
+                        <div class="activity">
+
+                            <div class="icon-container"><i class="fa-solid fa-thumbs-up"></i>120</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-comment"></i>50</div>
+                            <div class="icon-container"><i class="fa-sharp fa-solid fa-share"></i>10</div>
+
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <button type="button" class="load-more-btn">Load More</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="all">
+
+            <div class="post-container">
+
+                <!-- right sidebar -->
+                <div class="right-sidebar">
+
+                    <div class="sidebar-title">
+                        <h4>Events</h4>
+                        <a href="#">See All</a>
+                    </div>
+
+
+                    <div class="event">
+                        <div class="left-event">
+                            <h3>20</h3>
+                            <span>April</span>
+                        </div>
+                        <div class="right-event">
+                            <h4>Social Media</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Dhobighat,Lalitpur</p>
+                            <a href="#">More Information</a>
+
+
+
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="left-event">
+                            <h3>20</h3>
+                            <span>April</span>
+                        </div>
+                        <div class="right-event">
+
+
+
+                            <h4>Media Control</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Kunpondole,Lalitpur</p>
+                            <a href="#">More Information</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-title">
+                        <h4>Advertisement</h4>
+                        <a href="#">Close</a>
+                    </div>
+                    <img src="images/advertisement.png" class="sidebar-ads">
+
+                    <div class="sidebar-title">
+                        <h4>Chat</h4>
+                        <a href="#">Offline</a>
+                    </div>
+
+                    <div class="active-list">
+                        <div class="nav-user-icon online">
+                            <img src="images/member-1.png">
+                            <p>Sabina Karki</p>
+                        </div>
+                    </div>
+
+                    <div class="active-list">
+                        <div class="nav-user-icon online">
+
+                            <img src="images/member-2.png">
+                            <p>Manish Kharel</p>
+                        </div>
+                    </div>
+
+                    <div class="active-list">
+                        <div class="nav-user-icon online">
+                            <img src="images/member-3.png">
+                            <p>Saru Niroula</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <!-- footer -->
+
+
+            <!-- <div class="footer">
+            <p>Copyright 2023 - Easy Tutorials</p>
+        </div>   
+    </div> -->
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* Variables in css */
+
+:root {
+    --clr:blue;
+    --main-bg:#53aa99;
+}
+
+/* for all elements  */
+::selection {
+    background-color: yellow;
+    color: pink;
+}
+
+/* for individual class or ids */
+.selector ::selection{
+    color: brown;
+    background-color: purple;
+}
+
+
+/* Call variables */
+body{
+    background-color: var(--main-bg);
+}
+
+h1 {
+    color: var(--clr);
+}
+
+h2{
+    color: var(--clr);
+}
+
+h3 {
+    color: red;
+}
